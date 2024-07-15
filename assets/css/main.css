@@ -298,7 +298,8 @@ h6 {
   color: #ffffff;
   font-weight: 500;
   margin-right: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  margin-TOP: 35px;
 }
 .step-container {
   display: flex;
@@ -1051,7 +1052,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 25%);
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
   position: absolute;
   inset: 0;
   z-index: 2;
