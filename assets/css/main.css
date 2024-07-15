@@ -52,10 +52,11 @@
   --contrast-color: #ffffff;
 }
 
-
+@media (min-width: 1200px) {
 .industry-background {
   --background-color: #0b0b0b;
   /* --background-color: #dcbaba; */
+  --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #353535;
   --contrast-color: #ffffff;
@@ -68,6 +69,18 @@
   width: 100%; /* Adjust width as needed */
   
 }
+}
+
+@media (max-width: 1200px) {
+  .industry-background {
+    --background-color: #1b1b1b;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #353535;
+    --contrast-color: #ffffff;
+    
+  }
+  }
 
 
 
@@ -80,7 +93,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(27, 27, 27, 0.9); /* Adjust the alpha value for darkness */
-  z-index: 1;
+  z-index: 0;
   opacity: 1;
 }
 
@@ -1038,7 +1051,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 25%);
   position: absolute;
   inset: 0;
   z-index: 2;
