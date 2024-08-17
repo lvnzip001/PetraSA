@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Integration</title>
+</head>
+<body>
+
+<!-- Input fields for phone number and message -->
+<label for="phoneNumber">Phone Number (with country code):</label>
+<input type="text" id="phoneNumber" placeholder="+1234567890">
+<br>
+<label for="message">Message:</label>
+<textarea id="message" placeholder="Type your message here..."></textarea>
+<br>
+<button onclick="sendWhatsAppMessage()">Send via WhatsApp</button>
+
+<!-- WhatsApp API integration script -->
+<script>
+function sendWhatsAppMessage() {
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    var message = document.getElementById('message').value;
+    var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+    
+    window.open(whatsappURL, '_blank');
+}
+</script>
+
+</body>
+</html>
