@@ -58,19 +58,19 @@
 
 @media (min-width: 1200px) {
 .industry-background {
-  --background-color: #0b0b0b;
+  --background-color: #1b1b1b;
   /* --background-color: #dcbaba; */
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #353535;
   --contrast-color: #ffffff;
 
-  position: relative;
+  /*position: relative;
   background: url('../img/engen_fleet.jpg') center center;
-  background-size: cover;
+  background-size: cover; 
   color: var(--default-color);
   height: 100vh; /* Adjust height as needed */
-  width: 100%; /* Adjust width as needed */
+ /* width: 100%; */
   
 }
 }
