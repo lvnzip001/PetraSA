@@ -91,14 +91,18 @@
               <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
                   <h3 data-aos="fade-up" data-aos-delay="100">High Quality Services Backed by Quality Products</h3>
+                  
+      
+                  
                   <!-- <p data-aos="fade-up" data-aos-delay="200"><u>Dependable Service When You Need IT</u><span class="secondary-color"><b>.</b></span></p> -->
+
+                  
                   <div>
                     <a href="#contact" class="btn-get-started">GET QUOTE</a>
                     <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
                   </div>
+      
                 </div>
-              
-                
               </div>
             </div>
       
@@ -115,79 +119,86 @@
           
             
             
-                <!--<div class="row" style=" margin-bottom:35px; padding:0px 10px 0px 10px">-->
-              <div class="row products-container">
-                  <div class="col-lg-3 col-md-4 col-sm-6"> <!--d-flex align-items-stretch-->
-                    
-                    <div class="product-card">
-                      <img src="assets/img/truck-installation-service.jpg" alt="Diesel">
-                      <div class="product-info">
-                        <h3>DIESEL</h3>
-                        <p class="description">High-quality diesel for industrial and commercial use.</p>
+                <div class="row" style=" margin-bottom:35px; padding:0px 10px 0px 10px">
+                  
+                  <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+                    <div class="card">
+                      <img src="assets/img/truck-installation-service.jpg" 
+                      class="card-img-top"
+                      
+                       alt="...">
+                      <div class="card-icon">
+                        <i class="bi bi-exclamation-triangle"></i>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a style="color: #707687; font-size:25px" href=""></a></h5>
+                        <h5 class="card-title"><a href="">DIESEL</a></h5>
+                        
+                        <!-- <p class="card-text" style="text-align: center;">We specialise in the storage and delivery of Diesel, Parrafin and Petrol products. </p> -->
                       </div>
                     </div>
                   </div>
-
-                  <div class="col-lg-3 col-md-4 col-sm-6"> <!--d-flex align-items-stretch"-->
-                    <div class="products-container">
-                      <div class="product-card">
-                        <img src="assets/img/product-petrol.jpg" alt="Petrol">
-                        <div class="product-info">
-                          <h3>PETROL</h3>
-                          <p class="description">Premium petrol that ensures engine efficiency and performance.</p>
-                        </div>
+      
+                  <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+                    <div class="card">
+                      <img src="assets/img/product-petrol.jpg" 
+                      class="card-img-top"
+                      
+                       alt="...">
+                      <div class="card-icon">
+                        <i class="bi bi-exclamation-triangle"></i>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a style="color: #707687; font-size:25px" href=""></a></h5>
+                        <h5 class="card-title"><a href="">PETROL</a></h5>
+                        <!-- <p class="card-text" style="text-align: center;">We specialise in the storage and delivery of Diesel, Parrafin and Petrol products. </p> -->
                       </div>
                     </div>
                   </div>
-
-                  <div class="col-lg-3 col-md-4 col-sm-6"> <!--d-flex align-items-stretch"-->
-                    <div class="products-container">
-                      <div class="product-card">
-                        <img src="assets/img/product-petrol.jpg" alt="Petrol">
-                        <div class="product-info">
-                          <h3>LPG</h3>
-                          <p class="description">Premium Gas that ensures engine efficiency and performance.</p>
-                        </div>
+            
+                  <!-- Our Plan -->
+                  <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+                    <div class="card">
+                      <img src="assets/img/lubricants.jpg" 
+                      class="card-img-top"
+                      
+                       alt="...">
+                      <div class="card-icon" >
+                        <i class="bi bi-exclamation-triangle" style="font-weight: 700;"></i>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a style="color: #707687; font-size:25px" href=""></a></h5>
+                        <h5 class="card-title"><a href="">LUBRICANTS</a></h5>
+                        <!-- <p class="card-text" style="text-align: center;">We have a dedicated fleet of vehicles to ensure your delivery is on time and in full within 48hrs of placing your order.</p> -->
                       </div>
                     </div>
                   </div>
-
-                  <div class="col-lg-3 col-md-4 col-sm-6"><!--d-flex align-items-stretch"-->
-                    <div class="products-container">
-                      <div class="product-card">
-                          <img src="assets/img/lubricants.jpg" alt="Lubricants">
-                        <div class="product-info">
-                          <h3>LUBRICANTS</h3>
-                          <p class="description">High-performance lubricants for smooth engine operation.</p>
-                        </div>
+            
+                  <!-- Our Vision -->
+                  <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+                    <div class="card">
+                      <img src="assets/img/product-paraffin.jpg" 
+                      class="card-img-top"
+                      
+                       alt="...">
+                      <div class="card-icon">
+                        <i class="bi bi-exclamation-triangle"></i>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"><a style="color: #707687; font-size:25px" href=""></a></h5>
+                        <h5 class="card-title"><a href="">PARAFFIN</a></h5>
+                        <!-- <p class="card-text" style="text-align: center;">Our team of experts offer instalation of your new tankers as well as on going quality checks and maintenance. </p> -->
                       </div>
                     </div>
                   </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6"><!----d-flex align-items-stretch"-->
-                      <div class="products-container">
-                        <div class="product-card">
-                              <img src="assets/img/product-paraffin.jpg" alt="Paraffin">
-                            <div class="product-info">
-                              <h3>PARAFFIN</h3>
-                              <p class="description">Clean-burning paraffin for various applications.</p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    
-                    </div>
-                  </div>
-
                 </div>
-              </div>  
+            
               </div>
             </div><!-- End About Boxes Section -->
           
       
           </section><!-- /Tabs Section -->
               <!-- Services Section -->
-               
     <section id="services" class="services section section-bg dark-background">
 
       <!-- Section Title -->
