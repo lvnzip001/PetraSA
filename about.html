@@ -9,8 +9,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/1.png" rel="icon">
+  <link href="assets/img/1.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -25,48 +25,46 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-    }
-    .container {
-        max-width: 900px;
-        margin: 40px auto;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-    h1, h2, h3 {
-        color: #004080;
-        text-align: center;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    ul li {
-        background: #e0e0e0;
-        margin: 5px 0;
-        padding: 10px;
-        border-radius: 5px;
-    }
-    .contact {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .contact a {
-        display: inline-block;
-        padding: 10px 20px;
-        color: white;
-        background: #004080;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-    }
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: rgb(255, 255, 255);
+            background: url('assets\img\Logistics - Copy.webp') no-repeat center center/cover;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(20, 45, 38, 0.316);
+        }
+        .container {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(2, 46, 27, 0);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: '\2022';
+            color: yellow;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
 </style>
 
   <!-- Main CSS File -->
@@ -88,18 +86,18 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Presento</h1>
-        <span>.</span>
+        <img src="assets/img/2.png" alt="" style="margin-bottom:7px;"> 
+        <h1 class="sitename">FUEL</h1>
+        <span>AXIS</span><span style="color:#DB7600">.</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <!--li><a href="#portfolio">Portfolio</a></li>
+          <!--li><a href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -117,7 +115,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li-->
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -131,7 +129,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background">
+    <!--div class="page-title dark-background">
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
@@ -144,11 +142,32 @@
     </div><!-- End Page Title -->
 
     <!-- Starter Section Section -->
+
+    <section id="hero" class="hero section">
+      
+      <img src="assets/img/engen_fleet.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-up" data-aos-delay="100"><h2>FuelAxis, Energizing Your Business for Success!</h2>
+            <!-- <p data-aos="fade-up" data-aos-delay="200"><u>Dependable Service When You Need IT</u><span class="secondary-color"><b>.</b></span></p> -->
+            <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="#contact" class="btn-get-started">GET QUOTE</a>
+
+              <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
     <section id="starter-section" class="starter-section section">
     
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!--div class="container section-title" data-aos="fade-up">
         <h2>Starter Section</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
@@ -156,8 +175,100 @@
       <div class="whatsapp-btn-container">
         <a href=""><i class="fa-brands fa-whatsapp"></i></a>
       </div>
+
+      <section id="about" class="about section section-bg dark-background">
+
+        <div class="container position-relative">
+  
+          <div class="row gy-5">
+  
+            <div class="content col-xl-5 d-flex flex-column">
+              <h3>WELCOME TO FuelAxis Fuel DISTRIBUTORS</h3>
+              <p>At FuelAxis, we specialize in delivering top-notch energy solutions tailored to meet the diverse needs of businesses across South Africa. Whether your enterprise requires fuel, lubricants, or LPG, we are committed to providing safe, efficient, and reliable services.</p>
+        
+                <h2>Why Choose FuelAxis?</h2>
+                <ul>
+              <li><strong>Long-Term Partners:</strong> Reliable and integrity-driven service.</li>
+              <li><strong>Competitive Pricing:</strong> Premium-quality energy solutions at great prices.</li>
+              <li><strong>Extensive Logistics Fleet:</strong> Fuel tankers up to 38,000 liters for dependable delivery.</li>
+              <li><strong>Efficient Service:</strong> 24–48 hours turnaround time for nationwide delivery.</li>
+              <li><strong>Cutting-Edge Innovation:</strong> Technology-driven energy solutions.</li>
+              <li><strong>Empowering Growth:</strong> Level 4 B-BBEE contributor supporting inclusive growth.</li>
+              </ul>
+        
+              <h2>Comprehensive Solutions</h2>
+              <ul>
+              <li><strong>Petroleum:</strong> Supply & storage of ULP 95 for retail & commercial clients.</li>
+              <li><strong>Diesel:</strong> Delivery & storage of 10ppm & 50ppm diesel.</li>
+              <li><strong>LPG:</strong> Flexible supply for residential, commercial, & industrial needs.</li>
+              <li><strong>Lubricants:</strong> Bumper-to-Bumper products including minerals & synthetics.</li>
+              </ul>
+        
+              <h2>Industries We Serve</h2>
+              <ul>
+              <li>Retail Forecourts</li>
+              <li>Agriculture</li>
+              <li>Transport & Logistics</li>
+              <li>Mining</li>
+              <li>Manufacturing</li>
+              <li>Construction</li>
+              <li>Marine & Power Sectors</li>
+              </ul>
+            </div>
+
+              <!--div class="contact">
+              <h3>Contact Us</h3>
+              <p>Visit our website for more information or to request a consultation.</p>
+              <a href="about.html" class="about-btn align-self-center align-self-xl-start"><span>About us</span> <i class="bi bi-chevron-right"></i></a>
+              </div-->
+  
+            <div class="col-xl-7">
+              <div class="row gy-4">
+  
+                <div class="col-md-6 icon-box position-relative">
+                  <i class="bi bi-clock-history"></i>
+                  <h4><a href="" class="stretched-link">48 Hour Delivery Guaranteed</a></h4>
+                  <!-- <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> -->
+                </div><!-- Icon-Box -->
+  
+                <div class="col-md-6 icon-box position-relative">
+                  <i class="bi bi-gem"></i>
+                  <h4><a href="" class="stretched-link">Premium Quality Products</a></h4>
+                  <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p> -->
+                </div><!-- Icon-Box -->
+  
+                <div class="col-md-6 icon-box position-relative">
+                  <i class="bi bi-moisture"></i>
+                  <h4><a href="" class="stretched-link">Order Sizes From 4000L</a></h4>
+                </div><!-- Icon-Box -->
+  
+                <div class="col-md-6 icon-box position-relative">
+                  <i class="bi bi-funnel"></i>
+                  <h4><a href="" class="stretched-link">On-Site Product Testing</a></h4>
+                  <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+                </div><!-- Icon-Box -->
+                <div class="whatsapp-btn-container">
+                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="col-md-6 icon-box position-relative">
+                  <i class="bi bi-receipt"></i>
+                  <h4><a href="" class="stretched-link">LPG</a></h4>
+                  <!-- <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p> -->
+                </div><!-- Icon-Box -->
+  
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /About Section -->
+  
+      
+      <!--div class="overlay"></div>
       <div class="container">
-        <h1>FuelAxis: Energizing Your Business for Success</h1>
+        
         <h2>Welcome to FuelAxis</h2>
         <p>At FuelAxis, we specialize in delivering top-notch energy solutions tailored to meet the diverse needs of businesses across South Africa. Whether your enterprise requires fuel, lubricants, or LPG, we are committed to providing safe, efficient, and reliable services.</p>
         
@@ -194,8 +305,8 @@
             <h3>Contact Us</h3>
             <p>Visit our website for more information or to request a consultation.</p>
             <a href="https://www.FuelAxis.co.za" target="_blank">Visit FuelAxis</a>
-        </div>
-    </div>
+        </div-->
+      </div>
     </section><!-- /Starter Section Section -->
 
   </main>
@@ -206,13 +317,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Presento</span>
+            <span class="sitename">Fuel</span><span style="color: #0e936f;">Axis</span><span style="color: #DB7600;">.</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>86 Grayston Drive</p>
+            <p>Sandton, Johannesburg</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+27 11 243 5454</span></p>
+            <p><strong>Email:</strong> <span>info@liquital.co.za</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -225,9 +336,9 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="Products.html">Services</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
@@ -236,15 +347,15 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <ul>
+              <li><a href="#">WHOLESALE BULK FUEL</a></li>
+              <li><a href="#">48 HR DELIVERY</a></li>
+              <!--<li><a href="#">TANK INSTALATION</a></li>-->
+            </ul>
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
+        <!--div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Newsletter</h4>
           <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
@@ -253,19 +364,19 @@
             <div class="error-message"></div>
             <div class="sent-message">Your subscription request has been sent. Thank you!</div>
           </form>
-        </div>
+        </div-->
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Presento</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Fuel<span class="fuel-color">Axis</span><span class="secondary-color">.</span></strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by E-Funda web<a href="www.efunda.com"></a>
       </div>
     </div>
 
