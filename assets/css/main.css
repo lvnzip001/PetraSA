@@ -2508,6 +2508,37 @@ section,
   transform: translateY(0px);
 }
 
+.fuel-color {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #1abc9c; /* Brand green, adjust if needed */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.fuel-color span.highlight {
+  color: #ff9900; /* Accent orange if needed */
+  font-weight: bold;
+}
+
+.fuel-color.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* .fuel-color {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}/
+
+
 
 /*--------------------------------------------------------------
 body {
