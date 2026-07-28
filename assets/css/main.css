@@ -1930,6 +1930,23 @@ section,
   font-size: 14px;
 }
 
+.contact .quote-actions a {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 4px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact .quote-actions a:hover,
+.contact .quote-actions a:focus {
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--contrast-color);
+}
+
 .contact .php-email-form {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
