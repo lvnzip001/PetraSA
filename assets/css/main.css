@@ -2006,6 +2006,11 @@ section,
   color: var(--contrast-color);
 }
 
+.contact .quote-actions a:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent-color), transparent 45%);
+  outline-offset: 3px;
+}
+
 .contact .php-email-form {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
