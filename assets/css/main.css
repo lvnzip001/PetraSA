@@ -2824,7 +2824,7 @@ button:hover {
 
 .about-page .about-hero-facts {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -3196,6 +3196,20 @@ button:hover {
 @media (max-width: 991px) {
   .about-page .about-hero {
     min-height: 620px;
+  }
+
+  .about-page .about-hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-page .about-hero-facts > div:nth-child(3) {
+    padding-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-left: 0;
+  }
+
+  .about-page .about-hero-facts > div:nth-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
   }
 
   .about-page .about-story-visual {
