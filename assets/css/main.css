@@ -2674,3 +2674,629 @@ button:hover {
   background-color: #218838;
 }
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+.about-page {
+  --about-ink: #10241f;
+  --about-muted: #63716c;
+  --about-line: rgba(16, 36, 31, 0.12);
+  --about-soft: #f3f7f5;
+  --about-green: #0e936f;
+  --about-orange: #db7600;
+}
+
+.about-page .about-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 120px 0 46px;
+  color: #fff;
+  background: var(--about-ink);
+}
+
+.about-page .header .logo .about-logo-word {
+  color: var(--heading-color);
+}
+
+.about-page .footer .footer-links h3 {
+  position: relative;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about-page .about-hero-image,
+.about-page .about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-page .about-hero-image {
+  object-fit: cover;
+  object-position: center 48%;
+  transform: scale(1.015);
+}
+
+.about-page .about-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(8, 29, 23, 0.94) 0%, rgba(8, 29, 23, 0.7) 52%, rgba(8, 29, 23, 0.22) 100%),
+    linear-gradient(0deg, rgba(8, 29, 23, 0.76) 0%, transparent 52%);
+}
+
+.about-page .about-hero-content {
+  width: min(760px, 100%);
+  padding-bottom: 58px;
+}
+
+.about-page .about-eyebrow,
+.about-page .about-section-label {
+  margin: 0 0 18px;
+  color: var(--about-orange);
+  font-family: var(--heading-font);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.about-page .about-eyebrow {
+  color: #ffc67f;
+}
+
+.about-page .about-hero h1 {
+  max-width: 780px;
+  margin: 0 0 24px;
+  color: #fff;
+  font-size: clamp(44px, 6vw, 74px);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.03;
+}
+
+.about-page .about-hero-lead {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.7;
+}
+
+.about-page .about-hero-actions,
+.about-page .about-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.about-page .about-primary-action,
+.about-page .about-secondary-action,
+.about-page .about-phone-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 25px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: var(--heading-font);
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.about-page .about-primary-action {
+  background: var(--about-green);
+  color: #fff;
+}
+
+.about-page .about-primary-action:hover,
+.about-page .about-primary-action:focus {
+  background: color-mix(in srgb, var(--about-green), white 12%);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.about-page .about-secondary-action {
+  padding-right: 8px;
+  color: #fff;
+}
+
+.about-page .about-secondary-action i {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.about-page .about-secondary-action:hover,
+.about-page .about-secondary-action:focus {
+  color: #ffc67f;
+}
+
+.about-page .about-secondary-action:hover i {
+  transform: translateX(4px);
+}
+
+.about-page .about-hero-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-page .about-hero-facts > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 28px 28px 2px 0;
+}
+
+.about-page .about-hero-facts > div + div {
+  padding-left: 28px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-page .about-hero-facts strong {
+  color: #fff;
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.about-page .about-hero-facts span {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 13px;
+}
+
+.about-page .about-story {
+  padding: 112px 0;
+  background: #fff;
+}
+
+.about-page .about-story-visual {
+  position: relative;
+  max-width: 560px;
+  min-height: 570px;
+  margin-right: 18px;
+}
+
+.about-page .about-story-visual::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 64%;
+  height: 62%;
+  border: 1px solid color-mix(in srgb, var(--about-green), transparent 55%);
+  border-radius: 20px;
+}
+
+.about-page .about-story-visual > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(16, 36, 31, 0.17);
+  object-fit: cover;
+}
+
+.about-page .about-volume-note {
+  position: absolute;
+  right: -26px;
+  bottom: 32px;
+  width: min(310px, 78%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 22px;
+  border-left: 4px solid var(--about-orange);
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(16, 36, 31, 0.16);
+}
+
+.about-page .about-volume-note i {
+  color: var(--about-green);
+  font-size: 28px;
+}
+
+.about-page .about-volume-note span {
+  color: var(--about-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.about-page .about-volume-note strong {
+  display: block;
+  color: var(--about-ink);
+  font-size: 15px;
+}
+
+.about-page .about-story-copy {
+  padding-left: 32px;
+}
+
+.about-page .about-story-copy h2,
+.about-page .about-section-heading h2,
+.about-page .about-products h2,
+.about-page .about-industries h2,
+.about-page .about-cta h2 {
+  margin: 0;
+  color: var(--about-ink);
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+.about-page .about-story-intro {
+  margin: 28px 0 16px;
+  color: var(--about-ink);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.about-page .about-story-copy > p:not(.about-section-label):not(.about-story-intro) {
+  color: var(--about-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-page .about-proof-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.about-page .about-proof-list > div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 14px 0;
+  border-top: 1px solid var(--about-line);
+  color: var(--about-ink);
+  font-family: var(--heading-font);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-page .about-proof-list i {
+  color: var(--about-green);
+  font-size: 20px;
+}
+
+.about-page .about-values {
+  padding: 104px 0 112px;
+  background: var(--about-soft);
+}
+
+.about-page .about-section-heading {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: end;
+  gap: 80px;
+  margin-bottom: 52px;
+}
+
+.about-page .about-section-heading > p {
+  margin: 0 0 5px;
+  color: var(--about-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.about-page .about-value-card {
+  position: relative;
+  height: 100%;
+  min-height: 360px;
+  padding: 36px 34px;
+  overflow: hidden;
+  border-top: 3px solid transparent;
+  background: #fff;
+  box-shadow: 0 12px 36px rgba(16, 36, 31, 0.07);
+  transition: 0.3s ease;
+}
+
+.about-page .about-value-card:hover {
+  border-top-color: var(--about-green);
+  box-shadow: 0 18px 44px rgba(16, 36, 31, 0.12);
+  transform: translateY(-5px);
+}
+
+.about-page .about-value-card > i {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 48px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--about-green), transparent 72%);
+  color: var(--about-green);
+  font-size: 26px;
+}
+
+.about-page .about-value-number {
+  position: absolute;
+  top: 30px;
+  right: 32px;
+  color: color-mix(in srgb, var(--about-ink), transparent 82%);
+  font-family: var(--heading-font);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.about-page .about-value-card h3 {
+  margin: 0 0 15px;
+  color: var(--about-ink);
+  font-size: 23px;
+}
+
+.about-page .about-value-card p {
+  margin: 0;
+  color: var(--about-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-page .about-products {
+  padding: 108px 0;
+  color: #fff;
+  background: #102a23;
+}
+
+.about-page .about-products h2 {
+  max-width: 760px;
+  color: #fff;
+}
+
+.about-page .about-products-intro {
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.about-page .about-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 58px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.about-page .about-product-grid article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  min-height: 190px;
+  padding: 34px;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  transition: background 0.3s ease;
+}
+
+.about-page .about-product-grid article:hover {
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.about-page .about-product-grid article > span {
+  color: #e9a44d;
+  font-family: var(--heading-font);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.about-page .about-product-grid h3 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.about-page .about-product-grid p {
+  max-width: 420px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.7;
+}
+
+.about-page .about-industries {
+  padding: 110px 0 120px;
+  background: #fff;
+}
+
+.about-page .about-industries .col-lg-5 > p:not(.about-section-label) {
+  margin: 24px 0 0;
+  color: var(--about-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-page .about-industry-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding-left: 28px;
+}
+
+.about-page .about-industry-list span {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 64px;
+  padding: 14px 18px;
+  border: 1px solid var(--about-line);
+  color: var(--about-ink);
+  font-family: var(--heading-font);
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.about-page .about-industry-list span:hover {
+  border-color: color-mix(in srgb, var(--about-green), transparent 45%);
+  background: var(--about-soft);
+}
+
+.about-page .about-industry-list i {
+  color: var(--about-green);
+  font-size: 20px;
+}
+
+.about-page .about-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  margin-top: 100px;
+  padding: 58px 62px;
+  background:
+    linear-gradient(120deg, rgba(16, 42, 35, 0.98), rgba(14, 86, 67, 0.92)),
+    url("../img/Logistics.webp") center/cover;
+}
+
+.about-page .about-cta h2 {
+  max-width: 720px;
+  color: #fff;
+  font-size: clamp(30px, 4vw, 46px);
+}
+
+.about-page .about-cta > div > p:not(.about-section-label) {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about-page .about-cta-actions {
+  flex: 0 0 auto;
+  margin-top: 0;
+}
+
+.about-page .about-phone-action {
+  border-color: rgba(255, 255, 255, 0.34);
+  color: #fff;
+}
+
+.about-page .about-phone-action:hover,
+.about-page .about-phone-action:focus {
+  border-color: #fff;
+  color: #fff;
+}
+
+.about-page .about-primary-action:focus-visible,
+.about-page .about-secondary-action:focus-visible,
+.about-page .about-phone-action:focus-visible {
+  outline: 3px solid rgba(219, 118, 0, 0.48);
+  outline-offset: 3px;
+}
+
+@media (max-width: 991px) {
+  .about-page .about-hero {
+    min-height: 620px;
+  }
+
+  .about-page .about-story-visual {
+    max-width: none;
+    margin-right: 16px;
+  }
+
+  .about-page .about-story-copy {
+    padding: 24px 0 0;
+  }
+
+  .about-page .about-section-heading {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-page .about-industry-list {
+    padding-left: 0;
+  }
+
+  .about-page .about-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-page .about-hero {
+    min-height: 700px;
+    padding: 100px 0 34px;
+  }
+
+  .about-page .about-hero-overlay {
+    background: linear-gradient(90deg, rgba(8, 29, 23, 0.94), rgba(8, 29, 23, 0.68));
+  }
+
+  .about-page .about-hero-content {
+    padding-bottom: 38px;
+  }
+
+  .about-page .about-hero h1 {
+    font-size: clamp(40px, 13vw, 56px);
+  }
+
+  .about-page .about-hero-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .about-hero-facts > div {
+    padding: 15px 0;
+  }
+
+  .about-page .about-hero-facts > div + div {
+    padding-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-left: 0;
+  }
+
+  .about-page .about-story,
+  .about-page .about-values,
+  .about-page .about-products,
+  .about-page .about-industries {
+    padding: 76px 0;
+  }
+
+  .about-page .about-story-visual {
+    min-height: 440px;
+    margin-right: 8px;
+  }
+
+  .about-page .about-volume-note {
+    right: -8px;
+    bottom: 18px;
+  }
+
+  .about-page .about-proof-list,
+  .about-page .about-product-grid,
+  .about-page .about-industry-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .about-product-grid article {
+    min-height: 0;
+    padding: 28px 24px;
+  }
+
+  .about-page .about-cta {
+    margin-top: 72px;
+    padding: 42px 26px;
+  }
+
+  .about-page .about-cta-actions {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-page .about-primary-action,
+  .about-page .about-secondary-action,
+  .about-page .about-value-card,
+  .about-page .about-industry-list span {
+    transition: none;
+  }
+}
