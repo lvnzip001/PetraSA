@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FuelAxis Company Profile</title>
+  <meta name="description" content="FuelAxis supplier capability statement — bulk fuel, lubricants and ablution supply.">
+  <link rel="icon" href="assets/img/icon_profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0b211b;
+      --muted: #5a6b65;
+      --green: #0e6f59;
+      --green-dark: #0a4d3e;
+      --soft: #eef4f1;
+      --orange: #db7600;
+      --line: #d8e3de;
+      --white: #ffffff;
+      --page-w: 210mm;
+      --page-h: 297mm;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Source Sans 3", sans-serif;
+      color: var(--ink);
+      background: #b8c4bf;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .screen-bar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.8rem 1.25rem;
+      background: var(--ink);
+      color: rgba(255,255,255,0.88);
+      font-size: 0.88rem;
+    }
+
+    .screen-bar strong { color: #ffb45c; font-weight: 600; }
+
+    .screen-bar button {
+      border: 0;
+      background: var(--orange);
+      color: var(--white);
+      font: 600 0.88rem "Source Sans 3", sans-serif;
+      padding: 0.6rem 1.15rem;
+      cursor: pointer;
+      letter-spacing: 0.02em;
+    }
+
+    .screen-bar button:hover { background: #c46900; }
+
+    .deck {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      padding: 18px;
+    }
+
+    .page {
+      width: var(--page-w);
+      height: var(--page-h);
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 22px 55px rgba(11, 33, 27, 0.2);
+    }
+
+    h1, h2, h3 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      line-height: 0.96;
+    }
+
+    .eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange);
+    }
+
+    /* ========== COVER ========== */
+    .cover {
+      display: grid;
+      grid-template-rows: 1fr 52mm;
+      color: var(--white);
+    }
+
+    .cover-hero {
+      position: relative;
+      padding: 16mm 16mm 14mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      isolation: isolate;
+    }
+
+    .cover-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        url("assets/img/engen_fleet.jpg") center 40% / cover no-repeat;
+      z-index: -2;
+    }
+
+    .cover-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(105deg, rgba(8, 40, 32, 0.94) 0%, rgba(8, 40, 32, 0.78) 46%, rgba(8, 40, 32, 0.28) 100%),
+        linear-gradient(180deg, rgba(8, 40, 32, 0.15) 0%, rgba(8, 40, 32, 0.72) 100%);
+      z-index: -1;
+    }
+
+    .cover-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark img {
+      height: 46px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-mark .word {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 800;
+      font-size: 28px;
+      letter-spacing: 0.05em;
+      line-height: 1;
+    }
+
+    .brand-mark .word i {
+      font-style: normal;
+      color: var(--orange);
+    }
+
+    .cover-status {
+      text-align: right;
+      padding-top: 2px;
+    }
+
+    .cover-status .level {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffb45c;
+      letter-spacing: 0.04em;
+      line-height: 1;
+    }
+
+    .cover-status .label {
+      margin-top: 3px;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.78);
+    }
+
+    .cover-main {
+      max-width: 148mm;
+      padding-bottom: 2mm;
+    }
+
+    .cover-main .rule {
+      width: 28px;
+      height: 3px;
+      background: var(--orange);
+      margin: 0 0 8mm;
+      border: 0;
+    }
+
+    .cover-main .eyebrow {
+      color: #ffb45c;
+      margin-bottom: 5mm;
+    }
+
+    .cover-main h1 {
+      font-size: 58px;
+      font-weight: 800;
+      max-width: 145mm;
+      margin-bottom: 6mm;
+    }
+
+    .cover-main h1 em {
+      font-style: normal;
+      color: var(--orange);
+    }
+
+    .cover-main .lead {
+      font-size: 15px;
+      line-height: 1.5;
+      max-width: 118mm;
+      color: rgba(255,255,255,0.9);
+      font-weight: 400;
+    }
+
+    .cover-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      margin-top: 9mm;
+      padding-top: 6mm;
+      border-top: 1px solid rgba(255,255,255,0.22);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .cover-panel {
+      display: grid;
+      grid-template-columns: 1.35fr repeat(3, 1fr);
+      background: var(--green-dark);
+    }
+
+    .cover-intro {
+      padding: 9mm 10mm;
+      background: #083529;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .cover-intro .eyebrow {
+      color: #ffb45c;
+      margin-bottom: 3mm;
+    }
+
+    .cover-intro p {
+      font-size: 13px;
+      line-height: 1.45;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .stat {
+      padding: 9mm 7mm;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .stat:last-child { border-right: 0; }
+
+    .stat strong {
+      display: block;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffb45c;
+      line-height: 1;
+      margin-bottom: 2.5mm;
+    }
+
+    .stat span {
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.3;
+    }
+
+    /* ========== INNER PAGES ========== */
+    .inner {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background: var(--white);
+    }
+
+    .inner::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: linear-gradient(180deg, var(--orange) 0 28%, var(--green) 28%);
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9mm 14mm 6mm 16mm;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .page-header .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .page-header img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+
+    .page-header .chapter {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--green-dark);
+      letter-spacing: 0.02em;
+    }
+
+    .page-header .chapter small {
+      display: block;
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 2px;
+    }
+
+    .page-header .meta {
+      text-align: right;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .page-header .meta strong {
+      display: block;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .page-body {
+      padding: 9mm 14mm 7mm 16mm;
+    }
+
+    .page-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4mm 14mm 5mm 16mm;
+      border-top: 1px solid var(--line);
+      font-size: 10.5px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .page-footer strong { color: var(--green); font-weight: 700; }
+
+    .section {
+      margin-bottom: 8mm;
+    }
+
+    .section:last-child { margin-bottom: 0; }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 10mm;
+      align-items: end;
+      margin-bottom: 5mm;
+      padding-bottom: 3.5mm;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head h2 {
+      font-size: 30px;
+      color: var(--green-dark);
+      margin-top: 2.5mm;
+      max-width: 120mm;
+    }
+
+    .section-head .aside {
+      font-size: 12.5px;
+      line-height: 1.45;
+      color: var(--muted);
+      text-align: right;
+      padding-bottom: 1mm;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 8mm;
+      align-items: stretch;
+    }
+
+    .about-copy p {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: var(--muted);
+      margin-bottom: 3.5mm;
+    }
+
+    .about-copy p:last-child { margin-bottom: 0; }
+
+    .snapshot {
+      background: var(--soft);
+      border-left: 3px solid var(--orange);
+      padding: 5.5mm 5mm;
+    }
+
+    .snapshot h3 {
+      font-size: 16px;
+      color: var(--green-dark);
+      margin-bottom: 4mm;
+    }
+
+    .snapshot-row {
+      display: grid;
+      grid-template-columns: 34mm 1fr;
+      gap: 2mm;
+      padding: 2.2mm 0;
+      border-bottom: 1px solid #d7e2dd;
+      font-size: 12px;
+    }
+
+    .snapshot-row:last-child { border-bottom: 0; }
+
+    .snapshot-row dt {
+      color: var(--muted);
+      font-size: 10.5px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-top: 1px;
+    }
+
+    .snapshot-row dd {
+      color: var(--ink);
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .product {
+      padding: 5mm 4.5mm;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--white);
+      min-height: 36mm;
+    }
+
+    .product .num {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: 0.08em;
+      margin-bottom: 2.5mm;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      color: var(--green-dark);
+      margin-bottom: 2.5mm;
+    }
+
+    .product p {
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    .process article {
+      padding: 5.5mm 5mm;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .process article:last-child { border-right: 0; }
+
+    .process .num {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffb45c;
+      letter-spacing: 0.1em;
+      margin-bottom: 2mm;
+    }
+
+    .process h3 {
+      font-size: 18px;
+      margin-bottom: 2mm;
+    }
+
+    .process p {
+      font-size: 11.5px;
+      line-height: 1.35;
+      color: rgba(255,255,255,0.78);
+    }
+
+    /* PAGE 3 */
+    .why {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5mm;
+    }
+
+    .why article {
+      padding-top: 3mm;
+      border-top: 2px solid var(--orange);
+    }
+
+    .why .num {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: 0.1em;
+      margin-bottom: 2.5mm;
+    }
+
+    .why h3 {
+      font-size: 20px;
+      color: var(--green-dark);
+      margin-bottom: 2.5mm;
+    }
+
+    .why p {
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10mm;
+    }
+
+    .split .eyebrow { margin-bottom: 2mm; }
+
+    .split h3 {
+      font-size: 22px;
+      color: var(--green-dark);
+      margin-bottom: 4mm;
+    }
+
+    .steps {
+      list-style: none;
+      display: grid;
+      gap: 0;
+    }
+
+    .steps li {
+      display: grid;
+      grid-template-columns: 8mm 1fr;
+      gap: 3mm;
+      align-items: baseline;
+      padding: 2.8mm 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .steps li:last-child { border-bottom: 0; }
+
+    .steps b {
+      font-family: "Barlow Condensed", sans-serif;
+      color: var(--orange);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .supply {
+      margin-top: 4mm;
+      padding: 3.5mm 0 0;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .supply strong {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green-dark);
+      margin-bottom: 1.5mm;
+    }
+
+    .sectors {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2mm 3mm;
+    }
+
+    .sectors span {
+      display: block;
+      padding: 2.8mm 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--green-dark);
+    }
+
+    .ceo {
+      display: grid;
+      grid-template-columns: 38mm 1fr;
+      gap: 0;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      margin: 0 0 4.5mm;
+      overflow: hidden;
+      min-height: 38mm;
+    }
+
+    .ceo-photo {
+      position: relative;
+      background: #2a2a2a;
+      min-height: 38mm;
+    }
+
+    .ceo-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 18%;
+      display: block;
+    }
+
+    .ceo-body {
+      padding: 4.5mm 6mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 3px solid var(--orange);
+      background:
+        linear-gradient(90deg, rgba(238, 244, 241, 1) 0%, rgba(255,255,255,0.95) 100%);
+    }
+
+    .ceo-body .eyebrow {
+      margin-bottom: 1.5mm;
+    }
+
+    .ceo-body h3 {
+      font-size: 24px;
+      color: var(--green-dark);
+      margin-bottom: 1mm;
+    }
+
+    .ceo-body .role {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 2.5mm;
+    }
+
+    .ceo-body p {
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: var(--muted);
+      max-width: 128mm;
+    }
+
+    .refs-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 3mm;
+    }
+
+    .refs-head h3 {
+      font-size: 22px;
+      color: var(--green-dark);
+      margin-top: 2mm;
+    }
+
+    .refs-head p {
+      font-size: 11.5px;
+      color: var(--muted);
+      max-width: 70mm;
+      text-align: right;
+      line-height: 1.35;
+    }
+
+    .refs {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 4.5mm;
+    }
+
+    .refs th {
+      text-align: left;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0 3mm 2.5mm 0;
+      border-bottom: 1.5px solid var(--green-dark);
+    }
+
+    .refs td {
+      border-bottom: 1px solid var(--line);
+      padding: 3.2mm 3mm 3.2mm 0;
+      color: #a3b0aa;
+      font-size: 12px;
+      height: 9mm;
+    }
+
+    .cta {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      min-height: 28mm;
+    }
+
+    .cta-main {
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 6mm 7mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cta-main h3 {
+      font-size: 24px;
+      margin-bottom: 2mm;
+    }
+
+    .cta-main p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 3.5mm;
+    }
+
+    .cta-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm 8mm;
+    }
+
+    .cta-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13.5px;
+    }
+
+    .cta-side {
+      background: var(--orange);
+      color: var(--white);
+      padding: 6mm 7mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cta-side .eyebrow {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 2mm;
+    }
+
+    .cta-side h3 {
+      font-size: 20px;
+      margin-bottom: 2.5mm;
+    }
+
+    .cta-side p {
+      font-size: 12px;
+      line-height: 1.4;
+      color: rgba(255,255,255,0.92);
+    }
+
+    @media screen and (max-width: 900px) {
+      .page {
+        width: min(96vw, 210mm);
+        height: calc(min(96vw, 210mm) * 1.414);
+      }
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .screen-bar { display: none !important; }
+      .deck { padding: 0; gap: 0; }
+      .page {
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+        break-after: page;
+        page-break-after: always;
+      }
+      .page:last-child {
+        break-after: auto;
+        page-break-after: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-bar">
+    <div>FuelAxis Company Profile · <strong>3 A4 pages</strong> · Print → Save as PDF · Margins: None · Background graphics: On</div>
+    <button type="button" onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <div class="deck">
+    <!-- PAGE 1 -->
+    <section class="page cover" aria-label="Cover">
+      <div class="cover-hero">
+        <div class="cover-top">
+          <div class="brand-mark">
+            <img src="assets/img/icon_profile.png" alt="FuelAxis">
+            <div class="word">FUEL AXIS<i>.</i></div>
+          </div>
+          <div class="cover-status">
+            <div class="level">LEVEL 1</div>
+            <div class="label">B-BBEE Contributor</div>
+          </div>
+        </div>
+
+        <div class="cover-main">
+          <hr class="rule">
+          <p class="eyebrow">Company Profile · Capability Statement</p>
+          <h1>Fuel supply built around your operation<em>.</em></h1>
+          <p class="lead">
+            Licensed wholesaler and distributor of bulk diesel, petrol, illuminating paraffin
+            and premium lubricants for commercial and industrial customers — with toilet and
+            ablution supply as an added service for sites and projects.
+          </p>
+          <div class="cover-meta">
+            <span>Owned by Ultralucent</span>
+            <span>CEO Mizamo Mjekula</span>
+            <span>Eastern Cape</span>
+            <span>www.fuelaxis.co.za</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover-panel">
+        <div class="cover-intro">
+          <p class="eyebrow">At a glance</p>
+          <p>A dependable supply partner for commercial and industrial operations that need continuity, quality and clear coordination.</p>
+        </div>
+        <div class="stat">
+          <strong>4,000 L+</strong>
+          <span>Minimum bulk orders</span>
+        </div>
+        <div class="stat">
+          <strong>48 hrs</strong>
+          <span>Target delivery window</span>
+        </div>
+        <div class="stat">
+          <strong>On-site</strong>
+          <span>Product testing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page inner" aria-label="Capability">
+      <header class="page-header">
+        <div class="brand">
+          <img src="assets/img/icon_profile.png" alt="">
+          <div class="chapter">
+            <small>02 / Capability</small>
+            Who we are &amp; what we supply
+          </div>
+        </div>
+        <div class="meta">
+          <strong>FuelAxis · Ultralucent</strong>
+          Level 1 B-BBEE · Eastern Cape
+        </div>
+      </header>
+
+      <div class="page-body">
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">About FuelAxis</p>
+              <h2>A dependable fuel partner, not simply a supplier.</h2>
+            </div>
+            <p class="aside">Clear procurement. Coordinated delivery. Products matched to real operational demand.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                FuelAxis is a licensed wholesaler and distributor of bulk diesel, petrol and
+                illuminating paraffin, together with premium lubricants for commercial and
+                industrial customers. Operated under Ultralucent and led by Chief Executive
+                Officer Mizamo Mjekula, we focus on dependable supply and direct communication.
+              </p>
+              <p>
+                We deliver primarily across the Eastern Cape, with other locations considered
+                according to order needs and availability. Our approach is straightforward:
+                understand the operation, confirm the requirement and coordinate a reliable
+                supply solution.
+              </p>
+            </div>
+
+            <aside class="snapshot">
+              <h3>Company snapshot</h3>
+              <dl>
+                <div class="snapshot-row"><dt>Trading name</dt><dd>FuelAxis</dd></div>
+                <div class="snapshot-row"><dt>Owned by</dt><dd>Ultralucent</dd></div>
+                <div class="snapshot-row"><dt>CEO</dt><dd>Mizamo Mjekula</dd></div>
+                <div class="snapshot-row"><dt>Telephone</dt><dd>+27 78 888 0172</dd></div>
+                <div class="snapshot-row"><dt>Email</dt><dd>mizamo@ultralucent.co.za</dd></div>
+                <div class="snapshot-row"><dt>Address</dt><dd>Ntubeni Location, Msendo AA, Willowvale, 5040</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Offerings</p>
+              <h2>Products and services</h2>
+            </div>
+            <p class="aside">Essential energy products, plus ablution support for demanding sites.</p>
+          </div>
+
+          <div class="products">
+            <article class="product">
+              <div class="num">01</div>
+              <h3>Diesel</h3>
+              <p>Bulk 10 ppm and 50 ppm diesel for fleets, machinery and industrial operations.</p>
+            </article>
+            <article class="product">
+              <div class="num">02</div>
+              <h3>Petrol</h3>
+              <p>ULP 95 supply for retail forecourts and commercial customers.</p>
+            </article>
+            <article class="product">
+              <div class="num">03</div>
+              <h3>Illuminating paraffin</h3>
+              <p>Commercial bulk supply for approved operational applications.</p>
+            </article>
+            <article class="product">
+              <div class="num">04</div>
+              <h3>Lubricants</h3>
+              <p>Mineral and synthetic products for engines, fleets and machinery.</p>
+            </article>
+            <article class="product">
+              <div class="num">05</div>
+              <h3>Toilet &amp; ablution supply</h3>
+              <p>Portable and chemical toilets for sites, projects, municipalities and temporary works.</p>
+            </article>
+            <article class="product">
+              <div class="num">06</div>
+              <h3>Delivery &amp; testing</h3>
+              <p>48-hour delivery target for approved orders, with on-site product testing.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="process">
+            <article>
+              <div class="num">01</div>
+              <h3>Request</h3>
+              <p>Share product, volume and delivery location for a quotation.</p>
+            </article>
+            <article>
+              <div class="num">02</div>
+              <h3>Account</h3>
+              <p>Open an account with FuelAxis for ongoing supply.</p>
+            </article>
+            <article>
+              <div class="num">03</div>
+              <h3>Confirm</h3>
+              <p>Confirm order details, timing and delivery requirements.</p>
+            </article>
+            <article>
+              <div class="num">04</div>
+              <h3>Deliver</h3>
+              <p>Receive coordinated delivery to your operation.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <footer class="page-footer">
+        <span><strong>FuelAxis</strong> · www.fuelaxis.co.za</span>
+        <span>02 / 03</span>
+      </footer>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page inner" aria-label="Trust and contact">
+      <header class="page-header">
+        <div class="brand">
+          <img src="assets/img/icon_profile.png" alt="">
+          <div class="chapter">
+            <small>03 / Trust &amp; Contact</small>
+            Why FuelAxis &amp; how to engage
+          </div>
+        </div>
+        <div class="meta">
+          <strong>FuelAxis · Ultralucent</strong>
+          Level 1 B-BBEE · Eastern Cape
+        </div>
+      </header>
+
+      <div class="page-body">
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Differentiators</p>
+              <h2>Built for continuity, quality and trust.</h2>
+            </div>
+            <p class="aside">Fuel is critical to your operation. Our service is designed to keep procurement clear, delivery dependable and communication direct.</p>
+          </div>
+
+          <div class="why">
+            <article>
+              <div class="num">01</div>
+              <h3>Reliable turnaround</h3>
+              <p>Approved orders are coordinated around a 48-hour delivery target, subject to product availability and delivery requirements.</p>
+            </article>
+            <article>
+              <div class="num">02</div>
+              <h3>Product confidence</h3>
+              <p>Established supply relationships and on-site testing support consistent product quality for demanding operations.</p>
+            </article>
+            <article>
+              <div class="num">03</div>
+              <h3>Operational fit</h3>
+              <p>We shape each quotation around the product, volume, location and timing your organisation actually requires.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="split">
+            <div>
+              <p class="eyebrow">Delivery model</p>
+              <h3>How we work</h3>
+              <ol class="steps">
+                <li><b>01</b><span>Request a quotation with product, volume and location</span></li>
+                <li><b>02</b><span>Open an account with FuelAxis</span></li>
+                <li><b>03</b><span>Confirm order and delivery requirements</span></li>
+                <li><b>04</b><span>Receive coordinated delivery to site</span></li>
+              </ol>
+              <div class="supply">
+                <strong>Supply relationships</strong>
+                Sasol · TotalEnergies · Engen · Astron Energy
+              </div>
+            </div>
+            <div>
+              <p class="eyebrow">Markets</p>
+              <h3>Sectors we serve</h3>
+              <div class="sectors">
+                <span>Transport &amp; logistics</span>
+                <span>Agriculture</span>
+                <span>Construction</span>
+                <span>Manufacturing</span>
+                <span>Mining</span>
+                <span>Retail forecourts</span>
+                <span>Municipalities</span>
+                <span>Waste management</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="ceo">
+            <div class="ceo-photo">
+              <img src="assets/img/ceo_mm.jpg" alt="Mizamo Mjekula, Chief Executive Officer of FuelAxis">
+            </div>
+            <div class="ceo-body">
+              <p class="eyebrow">Leadership</p>
+              <h3>Mizamo Mjekula</h3>
+              <div class="role">Chief Executive Officer · FuelAxis</div>
+              <p>
+                Leads FuelAxis under Ultralucent, with responsibility for strategy, client
+                relationships and reliable fulfilment of bulk fuel, lubricant and ablution
+                supply contracts. Engagements are handled with direct communication and a
+                practical focus on keeping operations moving.
+              </p>
+            </div>
+          </div>
+
+          <div class="refs-head">
+            <div>
+              <p class="eyebrow">Track record</p>
+              <h3>Selected clients</h3>
+            </div>
+            <p>Contactable references and letters on client letterhead available on request.</p>
+          </div>
+
+          <table class="refs">
+            <thead>
+              <tr>
+                <th>Organisation</th>
+                <th>Scope</th>
+                <th>Location</th>
+                <th>Contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="cta">
+            <div class="cta-main">
+              <h3>Request a quotation</h3>
+              <p>Share product or service, volume, delivery location and timing.</p>
+              <div class="cta-links">
+                <a href="mailto:mizamo@ultralucent.co.za">mizamo@ultralucent.co.za</a>
+                <a href="tel:+27788880172">+27 78 888 0172</a>
+              </div>
+            </div>
+            <div class="cta-side">
+              <p class="eyebrow">Visit</p>
+              <h3>www.fuelaxis.co.za</h3>
+              <p>Ntubeni Location, Msendo AA<br>Willowvale, 5040, Eastern Cape</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="page-footer">
+        <span><strong>FuelAxis</strong> · A brand of Ultralucent</span>
+        <span>03 / 03</span>
+      </footer>
+    </section>
+  </div>
+</body>
+</html>
